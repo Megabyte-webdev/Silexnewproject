@@ -4,7 +4,7 @@
     font-weight: 500;
     color: black;
 }
-.course-objective p:nth-of-type(2){
+.course-objective p:nth-of-type(3){
 font-size: 17px;
 }
 .course-outline >ul,
