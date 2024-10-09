@@ -9,6 +9,7 @@ const Programme = () => {
   const { state } = useLocation();
   const courseId = state.courseId;
   console.log(courseId);
+scrollTo(0, 0);
   const [programInfo, setProgramInfo] = useState(null);
   useEffect(() => {
     axios
@@ -26,7 +27,7 @@ const Programme = () => {
       });
   }, [courseId]);
 
-  scrollTo(0, 0);
+  
   return (
     programInfo && (
       <>
