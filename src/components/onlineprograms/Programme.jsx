@@ -26,7 +26,7 @@ const Programme = () => {
       });
   }, [courseId]);
 
-  window.scrollTo(0, 0);
+  scrollTo(0, 0);
   return (
     programInfo && (
       <>
