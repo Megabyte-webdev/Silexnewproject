@@ -1,6 +1,8 @@
 import './program.css'
-
+import {useNavigate} from 'react-router-dom' 
 const ProgramPreview =({details})=>{
+
+const navigate=useNavigate();
 
 return(
 <div className='flex flex-col md:flex-row md: justify-between gap-4 p-[4%] my-5'>
@@ -16,7 +18,7 @@ return(
 </div>
 {/* Right side*/}
 <div className='w-full md:w-1/3 flex flex-col items-end' >
-<p className='w-full md:w-[90%] text-sm text-black border border-gray-700 px-3 py-4 underline'> Add To Cart
+<p on click={()=>{scroll to(0,0); navigate('/register')}} className='w-full md:w-[90%] text-sm text-black border border-gray-700 px-3 py-4 underline'> Add To Cart
 </p>
 <p className='w-full md:w-[90%] text-sm text-black border border-gray-700 px-3 py-4'>${details.price && details.price}
 </p>
