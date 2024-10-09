@@ -18,7 +18,7 @@ return(
 </div>
 {/* Right side*/}
 <div className='w-full md:w-1/3 flex flex-col items-end' >
-<p onClick={()=>{scrollTo(0,0); navigate('/https://silexnewproject.vercel.app/registration')}} className='w-full md:w-[90%] text-sm text-black border border-gray-700 px-3 py-4 underline'> Add To Cart
+<p onClick={()=>{scrollTo(0,0); navigate('https://silexnewproject.vercel.app/registration')}} className='w-full md:w-[90%] text-sm text-black border border-gray-700 px-3 py-4 underline'> Add To Cart
 </p>
 <p className='w-full md:w-[90%] text-sm text-black border border-gray-700 px-3 py-4'>${details.price && details.price}
 </p>
