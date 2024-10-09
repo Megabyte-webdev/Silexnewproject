@@ -98,7 +98,7 @@ const Navbar = () => {
       </div>
     </div>
     {/* Side nav */}
-      <div onClick={(event)=>{if(!event.target.closest('sideNav') && event.target === document.querySelector('.sideNav-container')) {setMenu(false)}}} className={`sideNav-container ${menu ===true ? 'opacity-1 left-0' : 'opacity-0 left-[-999px]'} md:hidden fixed z-[100] p-2 text-[13px] font-semibold top-0 bottom-0 w-screen h-full bg-[rgba(0,0,0,.8)] transition-all duration-500`}>
+      <div onClick={(event)=>{if(!event.target.closest('sideNav') && event.target === document.querySelector('.sideNav-container')) {setMenu(false)}}} className={`sideNav-container ${menu ===true ? 'opacity-1 left-0' : 'opacity-0 left-[-999px]'} md:hidden fixed z-[100] text-[13px] font-semibold top-0 bottom-0 w-screen h-full bg-[rgba(0,0,0,.8)] transition-all duration-500`}>
       <div className= 'sideNav bg-white w-96 h-full pt-12'>
     <div className="flex justify-between p-3 px-4">
     <img className="w-32 md:w-60 cursor-pointer" src={logo} alt="logo" />
